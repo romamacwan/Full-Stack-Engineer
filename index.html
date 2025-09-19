@@ -6,6 +6,6 @@
         const protocol = window.location.protocol === 'https:' ? 'wss' : 'ws';
         ws = new WebSocket(`${protocol}://${window.location.host}`);
 
-        ws.onmessage = (event) => { console.log(event.data) };
+        ws.onmessage = (event) => { console.log(event.data) };  // handle incoming messages from a Websocket connection
     </script>
 </html>
